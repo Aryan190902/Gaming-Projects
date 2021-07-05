@@ -17,5 +17,5 @@ OBSTICLE_PATHS={
     'flag': os.path.join(os.getcwd(),'resources/images/flag.png')
 }
 
-BGMPATH = os.path.join(os.getcwd(),'resources/music/mus.mp3')
+BGMPATH = os.path.join(os.getcwd(),'resources/music/bm.mp3')
 FONTPATH = os.path.join(os.getcwd(),'resources/font/FZSTK.TTF')

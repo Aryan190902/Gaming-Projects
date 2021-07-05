@@ -77,11 +77,13 @@ def AddObstacles(obstacles0,obstacles1):
 
 def ShowStartInterface(screen,screensize):
     screen.fill((255,255,255))
+    img = pg.image.load('resources/images/back2.jpg')
+    screen.blit(img,(0,0))
     tfont = pg.font.Font(cfg.FONTPATH, screensize[0]//5)
     cfont = pg.font.Font(cfg.FONTPATH,screensize[0]//20)
 
     title = tfont.render(u'Skier Game',True,(255,0,0))
-    content = cfont.render(u'Press any key to START',True,(0,0,255))
+    content = cfont.render(u'Press any key to START',True,(255,255,255))
     trect = title.get_rect()
     trect.midtop = (screensize[0]/2,screensize[1]/5)
     crect  = content.get_rect()
@@ -100,7 +102,7 @@ def ShowStartInterface(screen,screensize):
 
 def showScore(screen,score, pos=(10,10)):
     font = pg.font.Font(cfg.FONTPATH,30)
-    score_text = font.render('Score: %s' % score, True, (0,0,0))
+    score_text = font.render('Score: %s' % score, True, (255,0,0))
     screen.blit(score_text,pos)
 
 def updateFrame(screen,obstacles,skier,score):
